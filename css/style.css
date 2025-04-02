@@ -92,7 +92,7 @@ figure {
   #portfolio-aside .position {
     display: block;
     margin-bottom: 2em;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase; }
   #portfolio-aside #portfolio-logo {
     text-align: right;
@@ -104,7 +104,7 @@ figure {
     #portfolio-aside #portfolio-logo a {
       display: block;
       text-align: center;
-      color: #000;
+      color: #fff;
       padding-right: .3em; }
   #portfolio-aside #portfolio-main-menu {
     display: block;
@@ -176,13 +176,14 @@ figure {
   #portfolio-aside .portfolio-footer {
     font-size: 15px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 800;
     color: rgba(0, 0, 0, 0.5);
     padding: 0 20px;
     width: 100%; }
     @media screen and (max-width: 768px) {
       #portfolio-aside .portfolio-footer {
         position: relative;
+        margin-top: 30px;
         bottom: 0; } }
     #portfolio-aside .portfolio-footer span {
       display: block; }
@@ -190,7 +191,7 @@ figure {
       padding: 0;
       margin: 0; }
       #portfolio-aside .portfolio-footer ul li {
-        padding: 0;
+        padding: 30;
         margin: 0;
         display: inline;
         list-style: none; }
@@ -1104,8 +1105,8 @@ body.offcanvas {
     text-indent: -55px;
     background: #000;
     -webkit-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out; }
+    -o-transition: all 60s ease-out;
+    transition: all 60s ease-out; }
     .portfolio-nav-toggle i::before, .portfolio-nav-toggle i::after {
       content: '';
       width: 30px;
@@ -1115,7 +1116,7 @@ body.offcanvas {
       left: 0;
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
-      transition: 0.2s; }
+      transition: 0.8s; }
 
 .portfolio-nav-toggle i::before {
   top: -7px; }
