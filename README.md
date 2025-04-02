@@ -1,7 +1,7 @@
 # Tonny Mwangi - Portfolio Website
 
 Welcome to my personal portfolio website! This project showcases my skills, experience, and projects as a software developer and entrepreneur. It is designed to provide an engaging and professional online presence.
-I built it for FEB 2025 Cohort Hackathon, PLP Africa. The design language of the website is a minimalist white theme with many white spaces to improve readability and bring out a professional yet premium touch to a modern Software Developer. Simplicity here is key.
+I built it for FEB 2025 Cohort Hackathon, PLP Africa. The design language of the website is a minimalist white theme with many white spaces to improve readability and bring out a professional yet premium touch to a modern Software Developer portfolio website. Simplicity here is key.
 ## Table of Contents
 
 - [About the Project](#about-the-project)
