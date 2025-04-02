@@ -81,8 +81,8 @@ figure {
       transform: translateX(-300px);
       padding-top: 4em; } }
   #portfolio-aside .author-img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
     margin-bottom: 30px;
     -webkit-border-radius: 50%;

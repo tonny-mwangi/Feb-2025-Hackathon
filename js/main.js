@@ -97,16 +97,17 @@
 
 
 	var burgerMenu = function() {
-
 		$('.js-portfolio-nav-toggle').on('click', function(event){
 			event.preventDefault();
 			var $this = $(this);
 	
 			if ($('body').hasClass('offcanvas')) {
 				$this.removeClass('active');
+				$this.find('i').removeClass('icon-close').addClass('icon-menu'); // Toggle to burger icon
 				$('body').removeClass('offcanvas');	
 			} else {
 				$this.addClass('active');
+				$this.find('i').removeClass('icon-menu').addClass('icon-close'); // Toggle to close icon
 				$('body').addClass('offcanvas');	
 			}
 		});
@@ -118,21 +119,22 @@
 	};
 	
 	var clickMenu = function() {
-	
 		$('#navbar a:not([class="external"])').click(function(event){
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
 	
-				if ( $('[data-section="' + section + '"]').length ) {
-					$('html, body').animate({
-						scrollTop: $('[data-section="' + section + '"]').offset().top - 55
-					}, 500);
-			   }
+			if ($('[data-section="' + section + '"]').length) {
+				$('html, body').animate({
+					scrollTop: $('[data-section="' + section + '"]').offset().top - 55
+				}, 500);
+		   }
 	
-			if ( navbar.is(':visible')) {
+			if (navbar.is(':visible')) {
 				navbar.removeClass('in');
 				navbar.attr('aria-expanded', 'false');
 				$('.js-portfolio-nav-toggle').removeClass('active');
+				$('.js-portfolio-nav-toggle').find('i').removeClass('icon-close').addClass('icon-menu'); // Toggle to burger icon
+				$('body').removeClass('offcanvas');
 			}
 	
 			event.preventDefault();
@@ -142,7 +144,6 @@
 	
 	// Reflect scrolling in navigation
 	var navActive = function(section) {
-	
 		var $el = $('#navbar > ul');
 		$el.find('li').removeClass('active');
 		$el.each(function(){
@@ -151,11 +152,9 @@
 	};
 	
 	var navigationSection = function() {
-	
 		var $section = $('section[data-section]');
 		
 		$section.waypoint(function(direction) {
-			  
 			  if (direction === 'down') {
 				navActive($(this.element).data('section'));
 			  }
@@ -171,7 +170,6 @@
 			  offset: function() { return -$(this.element).height() + 155; }
 		});
 	};
-
 
 
 
