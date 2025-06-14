@@ -34,3 +34,6 @@ This portfolio website serves as a digital resume and portfolio to highlight my 
 - **Google Fonts**: For typography.
 - **Animate.css**: For smooth animations.
 
+## License
+This project is licensed under the MIT License - see the MIT (LICENSE) file for details.
+
