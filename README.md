@@ -35,5 +35,5 @@ This portfolio website serves as a digital resume and portfolio to highlight my 
 - **Animate.css**: For smooth animations.
 
 ## License
-This project is licensed under the MIT License - see the MIT (LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
